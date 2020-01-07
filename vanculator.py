@@ -9,15 +9,16 @@ def bvz(vopros, otvet):
     else:
         print("НЕ ТАК!!!")
 
+spisok_voprosov_i_otvetov = [
+    {'вопрос': '5 + 10 = ?',
+     'ответ': '15'},
+    {'вопрос': '12 + 45 = ?',
+     'ответ': '57'},
+    {'вопрос': '0 + 0 = ?',
+     'ответ': '0'},
+    ]
 
-вопрос = "5 + 10 = ?"
-ответ = '15'
-bvz(вопрос, ответ)
-
-vopros = "12 + 45 = ?"
-otvet = '57'
-bvz(vopros, otvet)
-
-voprosik = "0 + 0 = ?"
-otvetik = '0'
-bvz(voprosik, otvetik)
+for element in spisok_voprosov_i_otvetov:
+    vopros = element['вопрос']
+    otvet = element['ответ']
+    bvz(vopros, otvet)
