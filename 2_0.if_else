@@ -1,0 +1,68 @@
+# условный переход если - то (if - else)
+r = 5
+r2 = 5
+r3 = 6
+m = "lalolulsa"
+m2 = "lalolulsa"
+m3 = "NOT lalolulsa"
+list1000 = ["dgegidy","bloopersy","konfetki"]
+list1001 = ["dgegidy","bloopersy","konfetki"]
+list1002 = ["dgegidy","konfetki", "bloopersy"]
+
+if 2 == 2:
+    print("условие выполнено")
+
+a = 3
+b = 3
+if a == b:
+    print("условие выполнено")
+else:
+    print("условие НЕ выполнено")
+
+b = None
+
+if a == None:
+    print("NNNOOOOOOO")
+else:
+    print("Not None")
+
+if a:
+    print("true", a)
+else:
+    print("false", a)
+
+a1 = 0
+if a1:
+    print("true", a1)
+else:
+    print("false", a1)
+
+s01 = "Egor"
+s02 = ""
+
+listX = ["dd"]
+listX2 = []
+
+# elif
+
+age = 100000000000000000000000000
+# до 6 лет - нельзя. от 6 до 12 - можно с родителями. от 12 - можно одному
+
+if age < 6:
+    print("Рано тебе на этот фильм!")
+elif 6 <= age < 12:
+    print("Позови родителей")
+elif age >= 12:
+    print("Вам можно")
+else:
+    print("непонятный возраст")
+
+# if age > 6:
+#     if age < 12:
+#         print("Позови родителей")
+#
+# if age > 6 and age < 12:
+#         print("Позови родителей")
+
+# if 6 < age < 12:
+#         print("Позови родителей")
