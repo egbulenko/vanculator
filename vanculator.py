@@ -1,28 +1,23 @@
 # 2. Задавать определённое количество вопросов (например, 3) и после этого останавливаться
 
-print("5 + 10 = ?")
-print("Введите ответ:")
+def bvz(vopros, otvet):
+    print(vopros)
+    print("Введите ответ:")
+    perremmeennaayya = input()
+    if perremmeennaayya == otvet:
+        print("Верно!")
+    else:
+        print("НЕ ТАК!!!")
+
+
+вопрос = "5 + 10 = ?"
 ответ = '15'
-perremmeennaayyaa = input()
-if perremmeennaayyaa == ответ:
-    print("Отлично!")
-else:
-    print("НЕ ТАК!!!")
+bvz(вопрос, ответ)
 
-print("12 + 45 = ?")
-print("Введите ответ:")
+vopros = "12 + 45 = ?"
 otvet = '57'
-perremmeennaayya = input()
-if perremmeennaayya == otvet:
-    print("Отлично!")
-else:
-    print("НЕ ТАК!!!")
+bvz(vopros, otvet)
 
-print("0 + 0 = ?")
-print("Введите ответ:")
-otvetik = '00'
-perremmeennaaya = input()
-if perremmeennaaya == otvetik:
-    print("Отлично!")
-else:
-    print("НЕ ТАК!!!")
+voprosik = "0 + 0 = ?"
+otvetik = '0'
+bvz(voprosik, otvetik)
