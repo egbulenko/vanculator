@@ -72,12 +72,33 @@ def function(tekst_voprosa, proschalniy_tekst):
     bvz = input()
     print(proschalniy_tekst, bvz)
 
-vopros = "как тебя зовут?"
-pro_text = "пока"
-function(vopros, pro_text)
+# vopros = "как тебя зовут?"
+# pro_text = "пока"
+# function(vopros, pro_text)
+#
+# vopros = "сколько тебе лет?"
+# pro_text = "всего"
+# function(vopros, pro_text)
+#
+# function("какой сегодня день?", "уже")
 
-vopros = "сколько тебе лет?"
-pro_text = "всего"
-function(vopros, pro_text)
+def bolshe_desyati(nmb):
+    if nmb > 10:
+        print("Bigger!")
+        return True
+    else:
+        print("NOT bigger!")
+        return False
 
-function("какой сегодня день?", "уже")
+
+if bolshe_desyati(12):
+    print("BIG BIG NUMBER")
+
+if not bolshe_desyati(1):
+    print("SMALL number")
+
+bb = bolshe_desyati(17)
+nn = bolshe_desyati(7)
+
+print(bb)
+print(nn)
