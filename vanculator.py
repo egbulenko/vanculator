@@ -5,8 +5,10 @@ def bvz(vopros, otvet):
     perremmeennaayya = input()
     if perremmeennaayya == otvet:
         print("Верно!")
+        return True
     else:
         print("НЕ ТАК!!!")
+        return False
 
 
 spisok_voprosov_i_otvetov = [
@@ -127,15 +129,20 @@ spisok_voprosov_i_otvetov = [
      'ответ': '0'},
     ]
 
+
 SKOLKO_VOPROSOV_ZADAVAT = 3
 
 shetchic_voprosov = 0
-
+kol_vo_pravilnyh_otvetov = 0
 for element in spisok_voprosov_i_otvetov:
     vopros = element['вопрос']
     otvet = element['ответ']
-    bvz(vopros, otvet)
+    rezultat_proverki = bvz(vopros, otvet)
+    if rezultat_proverki == True:
+        kol_vo_pravilnyh_otvetov = kol_vo_pravilnyh_otvetov + 1
     shetchic_voprosov = shetchic_voprosov + 1
     if shetchic_voprosov == SKOLKO_VOPROSOV_ZADAVAT:
         break
 
+print("правильных ответов: " + str(kol_vo_pravilnyh_otvetov) + " из " + str(SKOLKO_VOPROSOV_ZADAVAT))
+rezultat_proverki = True
